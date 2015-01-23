@@ -1,0 +1,69 @@
+/* 
+Author: KronosCbs
+Last Modified on: Jan 23, 2015
+*/
+
+/* Common rules */
+
+body,
+html {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    background-color: #0B0408;
+
+}
+/* Common rules */
+
+/* Stack rules */
+
+.columns {
+    background-color: #0B0408;
+    height: 33.333%;
+}
+.blocks {
+    background: #0B0408;
+    opacity: 0.2;
+    height: 100%;
+    transition: background 1400ms, opacity 2s;
+    cursor: pointer;
+    position: relative;
+}
+.blocks:hover {
+    opacity: 1;
+}
+
+#decodeblock {
+    background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
+}
+#designblock {
+    background: #0B0408 url('../img/design1optim.jpg') center center no-repeat;
+}
+#fifablock {
+    background: #0B0408 url('../img/fifa1optim.jpg') center center no-repeat;
+}
+#cryptoblock {
+    background: #0B0408 url('../img/cryp1optim.jpg') center center no-repeat;
+}
+#crosswordblock {
+    background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
+}
+/* Stack rules */
+
+/* other elements */
+
+.namebanner {
+    padding: 10px;
+    border: 2px solid #fff;
+    font-size: 1em;
+    color: #000;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.blocks:hover .namebanner{
+    opacity: 0.5;
+}
