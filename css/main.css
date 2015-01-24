@@ -2,7 +2,6 @@
 Author: KronosCbs
 Last Modified on: Jan 23, 2015
 */
-
 /* Common rules */
 
 body,
@@ -11,16 +10,15 @@ html {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     background-color: #0B0408;
-
 }
 /* Common rules */
-
 /* Stack rules */
 
 .columns {
     background-color: #0B0408;
-    height: 33.333%;
+    height: 33.33333%;
 }
+
 .blocks {
     background: #0B0408;
     opacity: 0.2;
@@ -28,28 +26,65 @@ html {
     transition: background 1400ms, opacity 2s;
     cursor: pointer;
     position: relative;
+    border: 1px solid #000;
 }
+
 .blocks:hover {
     opacity: 1;
 }
 
 #decodeblock {
     background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
 }
+
 #designblock {
     background: #0B0408 url('../img/design1optim.jpg') center center no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
 }
+
 #fifablock {
     background: #0B0408 url('../img/fifa1optim.jpg') center center no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
 }
+
 #cryptoblock {
     background: #0B0408 url('../img/cryp1optim.jpg') center center no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
 }
+
 #crosswordblock {
     background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+}
+
+#sscbsblock {
+    background: #0B0408 url('../img/sscbs1optim.jpg') center center no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+}
+
+#somethingblock {
+    /* TODO: ADD background here */
+}
+
+#someotherblock {
+    /* TODO: ADD background here */
+}
+
+#teamblock {
+    /* TODO: ADD background here */
+}
+
+#eventblock {
+    /* TODO: ADD background here */
 }
 /* Stack rules */
-
 /* other elements */
 
 .namebanner {
@@ -59,11 +94,12 @@ html {
     color: #000;
     background-color: #fff;
     position: absolute;
-    bottom: 0;
+    bottom: 40%;
     opacity: 0;
+    border: 1px solid #000;
     transition: opacity 1s;
 }
 
-.blocks:hover .namebanner{
-    opacity: 0.5;
+.blocks:hover .namebanner {
+    opacity: 0.4;
 }

@@ -116,6 +116,7 @@ html {
     -ms-flex-item-align: start;
     align-self: flex-start;
     padding: 2px;
+    clear: both;
 }
 .col-nr-1,
 .col-nr-2,
