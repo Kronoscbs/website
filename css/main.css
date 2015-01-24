@@ -16,17 +16,17 @@ html {
 
 .columns {
     background-color: #0B0408;
-    height: 33.33333%;
+    height: 100%;
 }
 
 .blocks {
     background: #0B0408;
     opacity: 0.2;
-    height: 100%;
+    height: 33.33%;
     transition: background 1400ms, opacity 2s;
     cursor: pointer;
-    position: relative;
     border: 1px solid #000;
+    position: relative;
 }
 
 .blocks:hover {
@@ -102,4 +102,18 @@ html {
 
 .blocks:hover .namebanner {
     opacity: 0.4;
+}
+
+@media screen and (min-width: 48em) {
+    body,
+    html {
+        height: 100%;
+    }
+    .columns {
+        height: 33.33333%;
+    }
+
+.blocks {
+    height: 100%;
+}
 }
