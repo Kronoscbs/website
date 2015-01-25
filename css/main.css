@@ -24,7 +24,7 @@ html {
     height: 33.33%;
     border: 1px solid #000;
     position: relative;
-    transition: opacity 1600ms ease 150ms;
+    transition: opacity 800ms ease-out;
 }
 
 .blocks:hover {
@@ -106,7 +106,7 @@ html {
 /* other elements */
 
 .namebanner {
-    padding: 9px;
+    padding: 10px;
     font-size: 1em;
     color: #272727;
     background-color: #fff;
@@ -114,22 +114,21 @@ html {
     bottom: 40%;
     opacity: 0;
     border: 1px solid #000;
-    transition: opacity 200ms ease-out 600ms;
+    transition: opacity 200ms ease-out 500ms;
     cursor: pointer;
     text-decoration: none;
     font-weight: 700;
-    z-index: 11;
 }
 
 .columns > div:target {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     opacity: 1;
     z-index: 10;
-    transition: opacity 500ms;
+    transition: opacity 1200ms ease-in;
     border: 0;
 }
 
@@ -137,25 +136,58 @@ html {
     display: none;
 }
 
-.backbutton {
-    opacity: 0;
+.contentbox {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color: transparent;
+    visibility: hidden;
 }
 
-.columns > div:target .backbutton {
-    position: fixed;
-    opacity: 1;
-    right: 0;
-    margin: 30px;
-    text-align: center;
+.columns > div:target .contentbox {
+    visibility: visible;
+    z-index: 5;
 }
 
-.columns > div:target .backbutton a {
-    float: right;
-    color: #d8d8d8;
+.topbar {
+    height: 10%;
+    text-transform: uppercase;
+}
+
+.topbar div {
+    font-size: 0.7em;
+    font-weight: 900;
+    text-align: right;
+    margin-top: 15px;
+}
+
+.topbar div a {
+    color: #e5e5e5;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 2.5em;
+    margin-right: 10px;
 }
+
+.topbar div a:hover {
+    color: #fff;
+}
+
+.wall {
+    background-color: transparent;
+    height: 25%;
+    font-weight: 300;
+    font-size: 2.7em;
+    text-align: center;
+    color:#fff;
+    padding-top: 30px;
+    opacity: 0.9;
+}
+
+.informbox{
+    background-color: #fff;
+    height: 65%;
+}
+
 /* Hotfix #1 : improves media queries where div were stacked */
 
 @media screen and (min-width: 48em) {
