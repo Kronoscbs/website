@@ -22,7 +22,7 @@ html {
     background-color: inherit;
     opacity: 0.4;
     height: 33.33%;
-    border: 1px solid #000;
+    border: 1px solid #0B0408;
     position: relative;
     transition: opacity 800ms ease-out;
 }
@@ -58,7 +58,7 @@ html {
     background: #0B0408 url('../img/cryp1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
-    /* transition: opacity 1700ms ease 150ms; */
+
 }
 
 #crosswordblock {
@@ -71,34 +71,17 @@ html {
     background: #0B0408 url('../img/sscbs1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
-    /* transition: opacity 1700ms ease 150ms; */
+
 }
 
-#somethingblock {
-    /* TODO: ADD background here */
-
-    background-size: cover;
-    -moz-background-size: cover;
-}
-
-#someotherblock {
-    /* TODO: ADD background here */
-
-    background-size: cover;
-    -moz-background-size: cover;
-    /* transition: opacity 1700ms ease 150ms; */
-}
-
-#teamblock {
-    /* TODO: ADD background here */
-
+#sponsorblock {
+    background: #0B0408 url('../img/sponsors.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
 }
 
 #eventblock {
-    /* TODO: ADD background here */
-
+    background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
 }
@@ -172,22 +155,27 @@ html {
     color: #fff;
 }
 
+.topbar div a[href="#base"] {
+    font-size: 1.1em;
+    color:#ededed;
+}
+
+
 .wall {
     background-color: transparent;
     height: 25%;
     font-weight: 300;
     font-size: 2.7em;
     text-align: center;
-    color:#fff;
+    color: #fff;
     padding-top: 30px;
     opacity: 0.9;
 }
 
-.informbox{
+.informbox {
     background-color: #fff;
     height: 65%;
 }
-
 /* Hotfix #1 : improves media queries where div were stacked */
 
 @media screen and (min-width: 48em) {
@@ -200,6 +188,5 @@ html {
     }
     .blocks {
         height: 100%;
-        opacity: 0.25;
     }
 }
