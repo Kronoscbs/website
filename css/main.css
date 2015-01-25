@@ -8,29 +8,32 @@ body,
 html {
     height: 100%;
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
     background-color: #0B0408;
 }
 /* Common rules */
 /* Stack rules */
 
 .columns {
-    background-color: #0B0408;
+    background-color: inherit;
     height: 100%;
 }
 
 .blocks {
-    background: #0B0408;
-    opacity: 0.2;
+    background-color: inherit;
+    opacity: 0.4;
     height: 33.33%;
-    transition: background 1400ms, opacity 2s;
-    cursor: pointer;
     border: 1px solid #000;
     position: relative;
+    transition: opacity 1600ms ease 150ms;
 }
 
 .blocks:hover {
     opacity: 1;
+}
+
+.blocks:hover .namebanner {
+    opacity: 0.4;
+    transition: opacity 400ms ease-in 100ms;
 }
 
 #decodeblock {
@@ -55,6 +58,7 @@ html {
     background: #0B0408 url('../img/cryp1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
+    /* transition: opacity 1700ms ease 150ms; */
 }
 
 #crosswordblock {
@@ -67,42 +71,67 @@ html {
     background: #0B0408 url('../img/sscbs1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
+    /* transition: opacity 1700ms ease 150ms; */
 }
 
 #somethingblock {
     /* TODO: ADD background here */
+
+    background-size: cover;
+    -moz-background-size: cover;
 }
 
 #someotherblock {
     /* TODO: ADD background here */
+
+    background-size: cover;
+    -moz-background-size: cover;
+    /* transition: opacity 1700ms ease 150ms; */
 }
 
 #teamblock {
     /* TODO: ADD background here */
+
+    background-size: cover;
+    -moz-background-size: cover;
 }
 
 #eventblock {
     /* TODO: ADD background here */
+
+    background-size: cover;
+    -moz-background-size: cover;
 }
 /* Stack rules */
 /* other elements */
 
 .namebanner {
-    padding: 10px;
-    border: 2px solid #fff;
+    padding: 9px;
     font-size: 1em;
-    color: #000;
+    color: #272727;
     background-color: #fff;
     position: absolute;
     bottom: 40%;
     opacity: 0;
     border: 1px solid #000;
-    transition: opacity 1s;
+    transition: opacity 200ms ease-out 600ms;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    z-index: 11;
 }
 
-.blocks:hover .namebanner {
-    opacity: 0.4;
+.columns > div:target {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: 10;
+    transition: opacity 500ms;
 }
+/* Hotfix #1 : improves media queries where div were stacked */
 
 @media screen and (min-width: 48em) {
     body,
@@ -110,10 +139,10 @@ html {
         height: 100%;
     }
     .columns {
-        height: 33.33333%;
+        height: 33.3333%;
     }
-
-.blocks {
-    height: 100%;
-}
+    .blocks {
+        height: 100%;
+        opacity: 0.25;
+    }
 }
