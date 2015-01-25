@@ -130,6 +130,31 @@ html {
     opacity: 1;
     z-index: 10;
     transition: opacity 500ms;
+    border: 0;
+}
+
+.columns > div:target .namebanner {
+    display: none;
+}
+
+.backbutton {
+    opacity: 0;
+}
+
+.columns > div:target .backbutton {
+    position: fixed;
+    opacity: 1;
+    right: 0;
+    margin: 30px;
+    text-align: center;
+}
+
+.columns > div:target .backbutton a {
+    float: right;
+    color: #d8d8d8;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2.5em;
 }
 /* Hotfix #1 : improves media queries where div were stacked */
 
