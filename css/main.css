@@ -24,16 +24,21 @@ html {
     height: 33.33%;
     border: 1px solid #0B0408;
     position: relative;
-    transition: opacity 800ms ease-out;
+    transition: opacity 800ms ease-out ;
+    -webkit-transition : opacity 800ms ease-out ;
+    -moz-transition: opacity 800ms ease-out ;
 }
 
 .blocks:hover {
     opacity: 1;
 }
 
+
 .blocks:hover .namebanner {
     opacity: 0.4;
     transition: opacity 400ms ease-in 100ms;
+    -webkit-transition :opacity 800ms ease-out ;
+    -moz-transition :opacity 800ms ease-out ;
 }
 
 #decodeblock {
@@ -98,6 +103,8 @@ html {
     opacity: 0;
     border: 1px solid #000;
     transition: opacity 200ms ease-out 500ms;
+    -webkit-transition :opacity 200ms ease-out 500ms;
+    -moz-transition :opacity 200ms ease-out 500ms;
     cursor: pointer;
     text-decoration: none;
     font-weight: 700;
@@ -112,6 +119,8 @@ html {
     opacity: 1;
     z-index: 10;
     transition: opacity 1200ms ease-in;
+    -webkit-transition : opacity 1200ms ease-in;
+    -moz-transition : opacity 1200ms ease-in;
     border: 0;
 }
 
@@ -175,6 +184,7 @@ html {
 .informbox {
     background-color: #fff;
     height: 65%;
+    background-color: #EEEEEE;
 }
 /* Hotfix #1 : improves media queries where div were stacked */
 
@@ -188,5 +198,6 @@ html {
     }
     .blocks {
         height: 100%;
+        opacity: 0.25;
     }
 }
