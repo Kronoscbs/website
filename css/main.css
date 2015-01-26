@@ -10,7 +10,6 @@ html {
     font-family: 'Lato', sans-serif;
     background-color: #0B0408;
     overflow-x: hidden;
-    overflow-y:hidden;
 }
 /* Common rules */
 /* Stack rules */
@@ -200,6 +199,7 @@ html {
     body,
     html {
         height: 100%;
+        overflow-y:hidden;
     }
     .columns {
         height: 33.3333%;
