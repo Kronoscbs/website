@@ -25,9 +25,7 @@ html {
     height: 33.33%;
     border: 1px solid #0B0408;
     position: relative;
-    transition: opacity 800ms ease-out ;
-    -webkit-transition : opacity 800ms ease-out ;
-    -moz-transition: opacity 800ms ease-out ;
+
 }
 
 .blocks:hover {
@@ -36,60 +34,112 @@ html {
 
 
 .blocks:hover .namebanner {
-    opacity: 0.4;
-    transition: opacity 400ms ease-in 100ms;
-    -webkit-transition :opacity 800ms ease-out ;
-    -moz-transition :opacity 800ms ease-out ;
+    opacity: 0.8;
+    transition: opacity 800ms ease-out ;
+    -webkit-transition : opacity 800ms ease-out;
+    -moz-transition: opacity 800ms ease-out ;
 }
 
 #decodeblock {
-    background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
+    background: #0B0408 url('../img/dis1optim.jpg') top center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+
+#decodeblock:hover{
+    background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
 }
 
 #designblock {
-    background: #0B0408 url('../img/design1optim.jpg') center center no-repeat;
+    background: #0B0408 url('../img/design1optim.jpg') top center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+#designblock:hover{
+    background: #0B0408 url('../img/design1optim.jpg') center center no-repeat;
 }
 
 #fifablock {
-    background: #0B0408 url('../img/fifa1optim.jpg') center center no-repeat;
+    background: #0B0408 url('../img/fifa1optim.jpg') top center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+#fifablock:hover{
+    background: #0B0408 url('../img/fifa1optim.jpg') center center no-repeat;
 }
 
 #cryptoblock {
-    background: #0B0408 url('../img/cryp1optim.jpg') center center no-repeat;
+    background: #0B0408 url('../img/cryp1optim.jpg') top center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
 
+}
+#cryptoblock:hover{
+    background: #0B0408 url('../img/cryp1optim.jpg') center center no-repeat;
 }
 
 #crosswordblock {
-    background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
+    background: #0B0408 url('../img/crosswords1optim.jpg') top center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+
+#crosswordblock:hover{
+    background: #0B0408 url('../img/crosswords1optim.jpg') center center no-repeat;
 }
 
 #sscbsblock {
-    background: #0B0408 url('../img/sscbs1optim.jpg') center center no-repeat;
+    background: #0B0408 url('../img/sscbs1optim.jpg') top center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
 
+}
+#sscbsblock:hover{
+    background: #0B0408 url('../img/sscbs1optim.jpg') center center no-repeat;
 }
 
 #sponsorblock {
-    background: #0B0408 url('../img/sponsors.jpg') center center no-repeat;
+    background: #0B0408 url('../img/sponsors.jpg') top center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+
+#sponsorblock:hover{
+    background: #0B0408 url('../img/sponsors.jpg') center center no-repeat;
 }
 
 #eventblock {
-    background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
+    background: #0B0408 url('../img/teamkronos1optim.jpg') top center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+
+#eventblock:hover{
+    background: #0B0408 url('../img/teamkronos1optim.jpg') center center no-repeat;
 }
 /* Stack rules */
 /* other elements */
@@ -193,25 +243,6 @@ html {
     font-size: 1em;
 
 }
-/* Hotfix #1 : improves media queries where div were stacked */
-
-@media screen and (min-width: 48em) {
-    body,
-    html {
-        height: 100%;
-        overflow-y:hidden;
-    }
-    .columns {
-        height: 33.3333%;
-    }
-    .blocks {
-        height: 100%;
-        opacity: 0.25;
-    }
-    .informbox{
-        height: 65%;
-    }
-}
 
 .insideblock {
     height: 100%;
@@ -229,4 +260,24 @@ html {
     height: 100%;
     width: 100%;
     border: 1px solid #c7c7c7;
+}
+
+/* Hotfix #1 : improves media queries where div were stacked */
+
+@media screen and (min-width: 48em) {
+    body,
+    html {
+        height: 100%;
+        overflow-y:hidden;
+    }
+    .columns {
+        height: 33.3333%;
+    }
+    .blocks {
+        height: 100%;
+        opacity: 0.1;
+    }
+    .informbox{
+        height: 65%;
+    }
 }
