@@ -185,6 +185,10 @@ html {
     background-color: #fff;
     height: 65%;
     background-color: #EEEEEE;
+    padding: 30px 20px;
+    color:#666;
+    font-size: 1em;
+
 }
 /* Hotfix #1 : improves media queries where div were stacked */
 
@@ -200,4 +204,22 @@ html {
         height: 100%;
         opacity: 0.25;
     }
+}
+
+.insideblock {
+    height: 100%;
+    width: 100%;
+    padding:35px;
+}
+
+.insideblock:not(:first-child){
+    padding: 40px;
+}
+
+
+.boxinside {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #c7c7c7;
 }
