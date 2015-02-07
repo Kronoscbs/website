@@ -1,0 +1,361 @@
+/* 
+Author: KronosCbs
+Last Modified on: Jan 23, 2015
+*/
+/* Common rules */
+
+body,
+html {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: #0B0408;
+    overflow-x: hidden;
+}
+/* Common rules */
+/* Stack rules */
+
+.columns {
+    background-color: inherit;
+    height: 100%;
+}
+
+.blocks {
+    background-color: inherit;
+    opacity: 0.4;
+    height: 33.33%;
+    border: 1px solid #0B0408;
+    position: relative;
+
+}
+
+.blocks:hover {
+    opacity: 1;
+}
+
+
+.blocks:hover .namebanner {
+    opacity: 0.8;
+    transition: opacity 800ms ease-out ;
+    -webkit-transition : opacity 800ms ease-out;
+    -moz-transition: opacity 800ms ease-out ;
+}
+
+#decodeblock {
+    background: #0B0408 url('../img/decode.jpg') top center no-repeat;
+    background-size: cover;
+    filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+
+#decodeblock:hover{
+    background: #0B0408 url('../img/decode.jpg') center center no-repeat;
+     filter: none;
+  -webkit-filter: grayscale(0);
+}
+#samplebox {
+    background: #0B0408 url('../img/SANGANAK2015_50%25.jpg') top center no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+#samplebox:hover{
+    background: #0B0408 url('../img/SANGANAK2015_50%25.jpg') center center no-repeat;
+}
+
+#designblock {
+    background: #0B0408 url('../img/20191849-workteam-in-office-working-on-desktop-computer-business.jpg') top center no-repeat;
+    background-size: cover;
+     filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+#designblock:hover{
+    background: #0B0408 url('../img/20191849-workteam-in-office-working-on-desktop-computer-business.jpg') center center no-repeat;
+     filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+#fifablock {
+    background: #0B0408 url('../img/visa-football-getty-fullsize.jpg') top center no-repeat;
+    background-size: cover;
+     filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+#fifablock:hover{
+    background: #0B0408 url('../img/visa-football-getty-fullsize.jpg') center center no-repeat;
+     filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+#cryptoblock {
+    background: #0B0408 url('../img/cryp1optim.jpg') top center no-repeat;
+    background-size: cover;
+     filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+
+}
+#cryptoblock:hover{
+    background: #0B0408 url('../img/cryp1optim.jpg') center center no-repeat;
+     filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+#crosswordblock {
+    background: #0B0408 url('../img/3028-1617-picture-crossword.jpg') top center no-repeat;
+    background-size: cover;
+     filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+
+#crosswordblock:hover{
+    background: #0B0408 url('../img/3028-1617-picture-crossword.jpg') center center no-repeat;
+     filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+#sscbsblock {
+    background: #0B0408 url('../img/sscbs.jpg') top center no-repeat;
+    background-size: cover;
+     filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+
+}
+#sscbsblock:hover{
+    background: #0B0408 url('../img/sscbs.jpg') center center no-repeat;
+     filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+#sponsorblock {
+    background: #0B0408 url('../img/sponsor.jpg') top center no-repeat;
+    background-size: cover;
+     filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+
+#sponsorblock:hover{
+    background: #0B0408 url('../img/sponsor.jpg') center center no-repeat;
+     filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+#eventblock {
+    background: #0B0408 url('../img/teamkronos1optim.jpg') top center no-repeat;
+    background-size: cover;
+     filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -moz-background-size: cover;
+    transition: opacity 800ms ease-out , background 800ms;
+    -webkit-transition : opacity 800ms ease-out, background 800ms ;
+    -moz-transition: opacity 800ms ease-out, background 800ms ;
+}
+
+#eventblock:hover{
+    background: #0B0408 url('../img/teamkronos1optim.jpg') center center no-repeat;
+     filter: none;
+  -webkit-filter: grayscale(0);
+}
+/* Stack rules */
+/* other elements */
+
+.namebanner {
+    padding: 10px;
+    font-size: 1em;
+    color: #272727;
+    background-color: #fff;
+    position: absolute;
+    bottom: 40%;
+    opacity: 0;
+    border: 1px solid #000;
+    transition: opacity 200ms ease-out 500ms;
+    -webkit-transition :opacity 200ms ease-out 500ms;
+    -moz-transition :opacity 200ms ease-out 500ms;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.columns > div:target {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: 10;
+    transition: opacity 1200ms ease-in;
+    -webkit-transition : opacity 1200ms ease-in;
+    -moz-transition : opacity 1200ms ease-in;
+    border: 0;
+}
+
+.columns > div:target .namebanner {
+    display: none;
+}
+
+
+.contentbox {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color: transparent;
+    display: none;
+}
+
+.columns > div:target .contentbox {
+    display: block;
+    z-index: 5;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+
+.topbar {
+    height: 10%;
+    text-transform: uppercase;
+}
+
+.topbar div {
+    font-size: 0.7em;
+    font-weight: 900;
+    text-align: right;
+    margin-top: 15px;
+}
+
+.topbar div a {
+    color: #e5e5e5;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.topbar div a:hover {
+    color: #fff;
+}
+
+.topbar div a[href="#base"] {
+    font-size: 1.1em;
+    color:#ededed;
+}
+
+
+.wall {
+    background-color: transparent;
+    height: 25%;
+    font-weight: 300;
+    font-size: 2.7em;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    opacity: 0.9;
+}
+
+.informbox {
+    background-color: #fff;
+    height: auto;
+    background-color: #EEEEEE;
+    padding: 30px 20px;
+    color:#666;
+    font-size: 1em;
+
+}
+
+.insideblock {
+    height: 100%;
+    width: 100%;
+    padding:35px;
+}
+
+.insideblock:not(:first-child){
+    padding: 40px;
+}
+
+
+.boxinside {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #c7c7c7;
+}
+
+/* Hotfix #1 : improves media queries where div were stacked */
+
+@media screen and (min-width: 48em) {
+    body,
+    html {
+        height: 100%;
+        overflow-y:hidden;
+    }
+    .columns {
+        height: 33.3333%;
+    }
+    .blocks {
+        height: 100%;
+        opacity: 0.1;
+    }
+    .informbox{
+        height: 65%;
+    }
+}
+#countbox1
+{
+    border: 1px solid white;
+    border-radius:100%;
+    height:100%;
+    width:100%;
+}
+.namebanner1
+{
+   padding: 10px ;
+    font-size: 1em;
+    color: black;
+    background-color: #fff;
+    position: absolute;
+    bottom: 40%;
+    border: 1px solid #000;
+    text-decoration: none;
+    font-weight: 700;
+    margin:auto;
+}
+.logo
+{
+    position:absolute;
+   float:right;
+    
+}
