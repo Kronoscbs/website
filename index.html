@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Alpha-Sanganak 2015</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/gene.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,300italic,400italic,700italic,900' rel='stylesheet' type='text/css'>
+  <script type="text/javascript">
+//###################################################################
+// Author: ricocheting.com
+// Version: v3.0
+// Date: 2014-09-05
+// Description: displays the amount of time until the "dateFuture" entered below.
+
+var CDown = function() {
+	this.state=0;// if initialized
+	this.counts=[];// array holding countdown date objects and id to print to {d:new Date(2013,11,18,18,54,36), id:"countbox1"}
+	this.interval=null;// setInterval object
+}
+
+CDown.prototype = {
+	init: function(){
+		this.state=1;
+		var self=this;
+		this.interval=window.setInterval(function(){self.tick();}, 1000);
+	},
+	add: function(date,id){
+		this.counts.push({d:date,id:id});
+		this.tick();
+		if(this.state==0) this.init();
+	},
+	expire: function(idxs){
+		for(var x in idxs) {
+			this.display(this.counts[idxs[x]], "Now!");
+			this.counts.splice(idxs[x], 1);
+		}
+	},
+	format: function(r){
+		var out="";
+		if(r.d != 0){out += r.d +" "+((r.d==1)?"day":"days")+", ";}
+		if(r.h != 0){out += r.h +" "+((r.h==1)?"hour":"hours")+", ";}
+		out += r.m +" "+((r.m==1)?"min":"mins")+", ";
+		out += r.s +" "+((r.s==1)?"sec":"secs")+", ";
+
+		return out.substr(0,out.length-2);
+	},
+	math: function(work){
+		var	y=w=d=h=m=s=ms=0;
+
+		ms=(""+((work%1000)+1000)).substr(1,3);
+		work=Math.floor(work/1000);//kill the "milliseconds" so just secs
+
+		y=Math.floor(work/31536000);//years (no leapyear support)
+		w=Math.floor(work/604800);//weeks
+		d=Math.floor(work/86400);//days
+		work=work%86400;
+
+		h=Math.floor(work/3600);//hours
+		work=work%3600;
+
+		m=Math.floor(work/60);//minutes
+		work=work%60;
+
+		s=Math.floor(work);//seconds
+
+		return {y:y,w:w,d:d,h:h,m:m,s:s,ms:ms};
+	},
+	tick: function(){
+		var now=(new Date()).getTime(),
+			expired=[],cnt=0,amount=0;
+
+		if(this.counts)
+		for(var idx=0,n=this.counts.length; idx<n; ++idx){
+			cnt=this.counts[idx];
+			amount=cnt.d.getTime()-now;//calc milliseconds between dates
+
+			// if time is already past
+			if(amount<0){
+				expired.push(idx);
+			}
+			// date is still good
+			else{
+				this.display(cnt, this.format(this.math(amount)));
+			}
+		}
+
+		// deal with any expired
+		if(expired.length>0) this.expire(expired);
+
+		// if no active counts, stop updating
+		if(this.counts.length==0) window.clearTimeout(this.interval);
+		
+	},
+	display: function(cnt,msg){
+		document.getElementById(cnt.id).innerHTML=msg;
+	}
+};
+
+window.onload=function(){
+	var cdown = new CDown();
+
+	cdown.add(new Date(2015,1,26,10,00,00), "countbox1");
+};
+</script>
+
+</head>
+
+<body id="base">
+   
+    <div class="row columns">
+
+      
+        <div class="col-3 col-m-3 col-l-3 blocks" id="fifablock">
+            <a class="namebanner" href="#fifablock">GAMING BAD</a>
+
+            <div class="contentbox">
+                <div class="topbar row">
+                    <div class="col-6 col-m-6 col-l-6"></div>
+                    <div class="col-6 col-m-6 col-l-6">
+                        <a href="#fifablock"> GAMING BAD</a>
+                        <a href="#cryptoblock"> QUERY QUEST</a>
+                        <a href="#crosswordblock"> CROSSWORDS</a>
+                        <a href="#decodeblock"> DECODE++</a>
+                        <a href="#designblock"> IT QUIZ</a>
+                        <a href="#base"> Back to events</a>
+                    </div>
+                </div>
+                <div class="wall row"><span class="col-12 col-m-12 col-l-12">GAMING BAD</span>
+                </div>
+                <div class="informbox row">
+                    <div class="col-4 col-m-4 col-l-4 insideblock">
+                        <div class="boxinside"><img class="xwords" src="img/gaming bad.png"></div>
+                    </div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock">Now that we know who you are, I know who I am. I'm not a mistake!<br><br> It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me!<br><br> I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock">We might put a link / button / suscribe or something here.</div>
+                </div>
+            </div>
+
+        </div>
+         <div class="col-5 col-m-5 col-l-5 blocks" id="crosswordblock">
+            <a href="#crosswordblock" class="namebanner">CROSSWORDS : SOLVE THE Loreum IPSUM</a>
+            <div class="contentbox">
+                <div class="topbar row">
+                    <div class="col-6 col-m-6 col-l-6"></div>
+                    <div class="col-6 col-m-6 col-l-6">
+                        <a href="#fifablock"> GAMING BAD</a>
+                        <a href="#cryptoblock"> QUERY QUEST</a>
+                        <a href="#crosswordblock"> CROSSWORDS</a>
+                        <a href="#decodeblock"> DECODE++</a>
+                        <a href="#designblock"> IT QUIZ</a>
+                        <a href="#base"> Back to events</a>
+                    </div>
+                </div>
+                <div class="wall row"><span class="col-12 col-m-12 col-l-12">CROSSWORDS</span>
+                </div>
+                <div class="informbox row">
+                    <div class="col-4 col-m-4 col-l-4 insideblock">
+                        <div class="boxinside"><img class="xwords" src="img/xwords.png"></div>
+                    </div>
+
+                    <div class="col-4 col-m-4 col-l-4 insideblock">Not your usual Sunday newspaper crossword, this is the Sangank IT crossword. Plays just like a regular one, feels a lot harder. From tech jargon to the names of long lost pieces of code, the participant will be expected to have exceptional knowledge of the field of tech. The clues will be obscure and the answers even more confusing. Care to match your wits and become a tech titan?</div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock">We might put a link / button / suscribe or something here.</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-4 col-m-4 col-l-4 blocks" id="cryptoblock">
+            <a href="#cryptoblock" class="namebanner">QUERY QUEST</a>
+            <div class="contentbox">
+                <div class="topbar row">
+                    <div class="col-6 col-m-6 col-l-6"></div>
+                    <div class="col-6 col-m-6 col-l-6">
+                        <a href="#fifablock"> GAMING BAD</a>
+                        <a href="#cryptoblock"> QUERY QUEST</a>
+                        <a href="#crosswordblock"> CROSSWORDS</a>
+                        <a href="#decodeblock"> DECODE++</a>
+                        <a href="#designblock"> IT QUIZ</a>
+                        <a href="#base"> Back to events</a>
+                    </div>
+                </div>
+                <div class="wall row"><span class="col-m-12 col-l-12">QUERY QUEST</span>
+                </div>
+                <div class="informbox row">
+                    <div class="col-4 col-m-4 col-l-4 insideblock">
+                        <div class="boxinside"><img class="xwords" src="img/query quest.png"></div>
+                    </div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock">Now that we know who you are, I know who I am. I'm not a mistake!<br><br> It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me!<br><br> I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock">We might put a link / button / suscribe or something here.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row columns">
+
+       
+
+
+        <div class="col-5 col-m-5 col-l-5 blocks" id="designblock">
+            <a href="#designblock" class="namebanner">IT QUIZ: Storming Brain </a>
+            <div class="contentbox">
+                <div class="topbar row">
+                    <div class="col-6 col-m-6 col-l-6"></div>
+                    <div class="col-6 col-m-6 col-l-6">
+                        <a href="#fifablock"> GAMING BAD</a>
+                        <a href="#cryptoblock"> QUERY QUEST</a>
+                        <a href="#crosswordblock"> CROSSWORDS</a>
+                        <a href="#decodeblock"> DECODE++</a>
+                        <a href="#designblock"> IT QUIZ</a>
+                        <a href="#base"> Back to events</a>
+                    </div>
+                </div>
+                <div class="wall row"><span class="col-12 col-m-12 col-l-12">IT QUIZ</span>
+                </div>
+                <div class="informbox row">
+                    <div class="col-4 col-m-4 col-l-4 insideblock">
+                        <div class="boxinside"><img class="xwords" src="img/it quiz.png"></div>
+                    </div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock">The hottest tech fest on this side of the river would be incomplete without a quiz. To satisfy the appetite of the city’s most hard core tech quizzers, we bring to you the ___________. With a broad spectrum of questions ranging from recent developments to code names of long obsolete hardware and an exciting format, the quiz will be enjoyable for even the most hard to please quizzers.  Don’t worry, we don’t copy stuff from slideshare. Want to show off how much of a geek you are? Look no further, join us in the tech quiz at SSCBS</div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock">We might put a link / button / suscribe or something here.</div>
+                </div>
+            </div>
+        </div>
+         <div class="col-2 col-m-2 col-l-2 blocks" id="samplebox">
+          
+            <a href="#samplebox" class="namebanner">FILLERS</a>
+           
+             
+            <div class="contentbox">
+                <div class="topbar row">
+                    <div class="col-6 col-m-6 col-l-6"></div>
+                    <div class="col-6 col-m-6 col-l-6">
+                        <a href="#fifablock"> GAMING BAD</a>
+                        <a href="#cryptoblock"> QUERY QUEST</a>
+                        <a href="#crosswordblock"> CROSSWORDS</a>
+                        <a href="#decodeblock"> DECODE++</a>
+                        <a href="#designblock"> IT QUIZ</a>
+                        <a href="#base"> Back to events</a>
+                    </div>
+                </div>
+                <div class="wall row"><span class="col-12 col-m-12 col-l-12">FILLER EVENTS</span>
+                </div>
+                
+                <div class="informbox row">
+                    <div class="col-4 col-m-4 col-l-4 insideblock">
+                        <div class="boxinside"></div>
+                    </div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock"><U><B>LAN GAMING</B></U>: An intra-college LAN Gaming competition is organized every year which attracts a crowd of about 250-300 students. Through grueling sessions of games like Counter Strike 1.6 the competition zeroed down to a nail biting finish!</div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock">We might put a link / button / suscribe or something here.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-5 col-m-5 col-l-5 blocks" id="decodeblock">
+            <a href="#decodeblock" class="namebanner">DECODE++ : Enter into realms of Programming World</a>
+            <div class="contentbox">
+                <div class="topbar row">
+                    <div class="col-6 col-m-6 col-l-6"></div>
+                    <div class="col-6 col-m-6 col-l-6">
+                        <a href="#fifablock"> GAMING BAD</a>
+                        <a href="#cryptoblock"> QUERY QUEST</a>
+                        <a href="#crosswordblock"> CROSSWORDS</a>
+                        <a href="#decodeblock"> DECODE++</a>
+                        <a href="#designblock"> IT QUIZ</a>
+                        <a href="#base"> Back to events</a>
+                    </div>
+                </div>
+                <div class="wall row"><span class="col-12 col-m-12 col-l-12">DECODE++</span>
+                </div>
+                <div class="informbox row">
+                    <div class="col-4 col-m-4 col-l-4 insideblock">
+                        <div class="boxinside"><img class="xwords" src="img/decode.png"></div>
+                    </div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock">It is a coding competition in C++ programming language. In this event, we have several rounds to check the programming abilities of the participants and engage them in writing and solving such problems. 
+Break coding barriers.
+
+Crack the idea.
+
+Thwack the confusion and proceed with your imagination.
+
+Negate monotony and decode in symphony.<br>
+
+
+<u>Rules and regulations</u>:<br>
+1.   Teams of 2 will be entertained.<br>
+2.  First round will be a questionnaire with MCQs.<br>
+3.   In Second round, a program will be given to write the coding.<br>
+
+
+</div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock">We might put a link / button / suscribe or something here.</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="row columns">
+         <div class="col-4 col-m-4 col-l-4 blocks" id="eventblock">
+            <a href="#eventblock" class="namebanner">SANGANAK - TEAM KRONOS</a>
+            <div class="contentbox">
+                <div class="topbar row">
+                    <div class="col-6 col-m-6 col-l-6"></div>
+                    <div class="col-6 col-m-6 col-l-6">
+                        <a href="#fifablock"> GAMING BAD</a>
+                        <a href="#cryptoblock"> QUERY QUEST</a>
+                        <a href="#crosswordblock"> CROSSWORDS</a>
+                        <a href="#decodeblock"> DECODE++</a>
+                        <a href="#designblock"> IT QUIZ</a>
+                        <a href="#base"> Back to events</a>
+                    </div>
+                </div>
+                <div class="wall row"><span class="col-12 col-m-12 col-l-12">TEAM KRONOS</span>
+                </div>
+                <div class="informbox row"><br><br>Kronos has enduring members who aim at igniting the spark of innovation and creativity among the young mind of techies.We break out of the humdrum of SSCBS culture of academics by directly reaching out to students and teachers, within and outside college.<br></div>
+            </div>
+        </div>
+
+        <div class="col-m-3 col-l-3 blocks" id="sscbsblock">
+            <a href="http://sscbsdu.ac.in/" class="namebanner">SSCBS : OUR BELOVED COLLEGE</a>
+        </div>
+
+        <div class="col-5 col-m-5 col-l-5 blocks" id="sponsorblock">
+            
+            <a class="namebanner" href="#sponsorblock">PEOPLE WHO POWER US </a>
+           
+          
+            <div class="contentbox">
+                <div class="topbar row">
+                    <div class="col-6 col-m-6 col-l-6"></div>
+                    <div class="col-6 col-m-6 col-l-6">
+                        <a href="#fifablock"> GAMING BAD</a>
+                        <a href="#cryptoblock"> QUERY QUEST</a>
+                        <a href="#crosswordblock"> CROSSWORDS</a>
+                        <a href="#decodeblock"> DECODE++</a>
+                        <a href="#designblock"> IT QUIZ</a>
+                        <a href="#base"> Back to events</a>
+                    </div>
+                </div>
+                <div class="wall row"><span class="col-12 col-m-12 col-l-12">Sponsors</span>
+                </div>
+                <div class="informbox row">
+                    <div class="col-4 col-m-4 col-l-4 insideblock">
+                        <div class="boxinside"></div>
+                    </div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock">Now that we know who you are, I know who I am. I'm not a mistake!<br><br> It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me!<br><br> I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</div>
+                    <div class="col-4 col-m-4 col-l-4 insideblock">We might put a link / button / suscribe or something here.</div>
+                </div>
+            </div>
+         
+        </div>
+
+    </div>
+        
+      <div id="countbox1" align="center"> </div>
+    <img id="imga" src="img/Sanganak flat- transparent purple.png"/>
+  
+</body>
+
+</html>
