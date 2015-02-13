@@ -21,140 +21,156 @@ html {
 
 .blocks {
     background-color: inherit;
-    opacity: 0.4;
+    opacity: 0.5;
     height: 33.33%;
     border: 1px solid #0B0408;
     position: relative;
-
 }
 
 .blocks:hover {
     opacity: 1;
 }
 
-
 .blocks:hover .namebanner {
     opacity: 0.8;
-    transition: opacity 800ms ease-out ;
-    -webkit-transition : opacity 800ms ease-out;
-    -moz-transition: opacity 800ms ease-out ;
+    transition: opacity 800ms ease-out;
+    -webkit-transition: opacity 800ms ease-out;
+    -moz-transition: opacity 800ms ease-out;
 }
 
-#decodeblock {
+#decodeblock,
+#decodeblock .clickevent {
     background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
     transition: opacity 800ms ease-out;
-    -webkit-transition : opacity 800ms ease-out  ;
-    -moz-transition: opacity 800ms ease-out  ;
+    -webkit-transition: opacity 800ms ease-out;
+    -moz-transition: opacity 800ms ease-out;
 }
 
-#decodeblock:hover{
+#decodeblock:hover,
+#decodeblock .clickevent:hover {
     background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
 }
 
-#designblock {
+#designblock,
+#designblock .clickevent {
     background: #0B0408 url('../img/design1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
-    transition: opacity 800ms ease-out  ;
-    -webkit-transition : opacity 800ms ease-out  ;
-    -moz-transition: opacity 800ms ease-out  ;
+    transition: opacity 800ms ease-out;
+    -webkit-transition: opacity 800ms ease-out;
+    -moz-transition: opacity 800ms ease-out;
 }
-#designblock:hover{
+
+#designblock:hover,
+#designblock .clickevent:hover {
     background: #0B0408 url('../img/design1optim.jpg') center center no-repeat;
-        background-size: cover;
+    background-size: cover;
     -moz-background-size: cover;
 }
 
-#fifablock {
+#fifablock,
+#fifablock .clickevent {
     background: #0B0408 url('../img/fifa1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
-    transition: opacity 800ms ease-out  ;
-    -webkit-transition : opacity 800ms ease-out  ;
-    -moz-transition: opacity 800ms ease-out  ;
+    transition: opacity 800ms ease-out;
+    -webkit-transition: opacity 800ms ease-out;
+    -moz-transition: opacity 800ms ease-out;
 }
-#fifablock:hover{
+
+#fifablock:hover,
+#fifablock .clickevent:hover {
     background: #0B0408 url('../img/fifa1optim.jpg') center center no-repeat;
-        background-size: cover;
+    background-size: cover;
     -moz-background-size: cover;
 }
 
-#cryptoblock {
+#cryptoblock,
+#cryptoblock .clickevent {
     background: #0B0408 url('../img/cryp1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
-    transition: opacity 800ms ease-out  ;
-    -webkit-transition : opacity 800ms ease-out  ;
-    -moz-transition: opacity 800ms ease-out  ;
-
+    transition: opacity 800ms ease-out;
+    -webkit-transition: opacity 800ms ease-out;
+    -moz-transition: opacity 800ms ease-out;
 }
-#cryptoblock:hover{
+
+#cryptoblock:hover,
+#cryptoblock .clickevent:hover {
     background: #0B0408 url('../img/cryp1optim.jpg') center center no-repeat;
-        background-size: cover;
+    background-size: cover;
     -moz-background-size: cover;
 }
 
-#crosswordblock {
+#crosswordblock,
+#crosswordblock .clickevent {
     background: #0B0408 url('../img/crosswords1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
-    transition: opacity 800ms ease-out  ;
-    -webkit-transition : opacity 800ms ease-out  ;
-    -moz-transition: opacity 800ms ease-out  ;
+    transition: opacity 800ms ease-out;
+    -webkit-transition: opacity 800ms ease-out;
+    -moz-transition: opacity 800ms ease-out;
 }
 
-#crosswordblock:hover{
+#crosswordblock:hover,
+#crosswordblock .clickevent:hover {
     background: #0B0408 url('../img/crosswords1optim.jpg') center center no-repeat;
-        background-size: cover;
+    background-size: cover;
     -moz-background-size: cover;
 }
 
-#sscbsblock {
+#sscbsblock,
+#sscbsblock .clickevent {
     background: #0B0408 url('../img/sscbs1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
-    transition: opacity 800ms ease-out  ;
-    -webkit-transition : opacity 800ms ease-out  ;
-    -moz-transition: opacity 800ms ease-out  ;
-
+    transition: opacity 800ms ease-out;
+    -webkit-transition: opacity 800ms ease-out;
+    -moz-transition: opacity 800ms ease-out;
 }
-#sscbsblock:hover{
+
+#sscbsblock:hover,
+#sscbsblock .clickevent:hover {
     background: #0B0408 url('../img/sscbs1optim.jpg') center center no-repeat;
-        background-size: cover;
+    background-size: cover;
     -moz-background-size: cover;
 }
 
-#sponsorblock {
+#sponsorblock,
+#sponsorblock .clickevent {
     background: #0B0408 url('../img/sponsors.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
-    transition: opacity 800ms ease-out  ;
-    -webkit-transition : opacity 800ms ease-out  ;
-    -moz-transition: opacity 800ms ease-out  ;
+    transition: opacity 800ms ease-out;
+    -webkit-transition: opacity 800ms ease-out;
+    -moz-transition: opacity 800ms ease-out;
 }
 
-#sponsorblock:hover{
+#sponsorblock:hover,
+#sponsorblock .clickevent:hover {
     background: #0B0408 url('../img/sponsors.jpg') center center no-repeat;
-        background-size: cover;
+    background-size: cover;
     -moz-background-size: cover;
 }
 
-#eventblock {
+#eventblock,
+#eventblock .clickevent {
     background: #0B0408 url('../img/teamkronos1optim.jpg') center center no-repeat;
     background-size: cover;
     -moz-background-size: cover;
-    transition: opacity 800ms ease-out  ;
-    -webkit-transition : opacity 800ms ease-out  ;
-    -moz-transition: opacity 800ms ease-out  ;
+    transition: opacity 800ms ease-out;
+    -webkit-transition: opacity 800ms ease-out;
+    -moz-transition: opacity 800ms ease-out;
 }
 
-#eventblock:hover{
+#eventblock:hover,
+#eventblock .clickevent:hover {
     background: #0B0408 url('../img/teamkronos1optim.jpg') center center no-repeat;
-        background-size: cover;
+    background-size: cover;
     -moz-background-size: cover;
 }
 /* Stack rules */
@@ -163,19 +179,21 @@ html {
 .namebanner {
     padding: 10px;
     font-size: 1em;
-    color: #272727;
-    background-color: #fff;
+    color: #ebebeb;
+    background-color: #1c1c1c;
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     opacity: 0;
-    border: 1px solid #000;
-    transition: opacity 200ms ease-out 500ms;
-    -webkit-transition :opacity 200ms ease-out 500ms;
-    -moz-transition :opacity 200ms ease-out 500ms;
+    border: 1px solid #0d0d0d;
+    border-left-width: 0;
+    transition: opacity ease-out 500ms;
+    -webkit-transition: opacity ease-out 500ms;
+    -moz-transition: opacity ease-out 500ms;
     cursor: pointer;
     text-decoration: none;
     font-weight: 700;
 }
+
 
 .columns > div:target {
     height: 100%;
@@ -186,8 +204,8 @@ html {
     opacity: 1;
     z-index: 10;
     transition: opacity 1200ms ease-in;
-    -webkit-transition : opacity 1200ms ease-in;
-    -moz-transition : opacity 1200ms ease-in;
+    -webkit-transition: opacity 1200ms ease-in;
+    -moz-transition: opacity 1200ms ease-in;
     border: 0;
 }
 
@@ -195,20 +213,24 @@ html {
     display: none;
 }
 
+.columns > div:target .clickevent {
+    display: none;
+}
+
 .contentbox {
     position: relative;
     height: 100%;
     width: 100%;
-    z-index: 3;
+    z-index: 30;
     background-color: transparent;
     display: none;
 }
 
 .columns > div:target .contentbox {
     display: block;
-    z-index: 5;
+    z-index: 50;
     overflow-x: hidden;
-    overflow-y:auto;
+    overflow-y: auto;
 }
 
 .topbar {
@@ -226,7 +248,7 @@ html {
 .topbar div a {
     color: #e5e5e5;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .topbar div a:hover {
@@ -235,9 +257,8 @@ html {
 
 .topbar div a[href="#base"] {
     font-size: 1.1em;
-    color:#ededed;
+    color: #ededed;
 }
-
 
 .wall {
     background-color: transparent;
@@ -248,7 +269,7 @@ html {
     color: #fff;
     padding-top: 30px;
     opacity: 0.9;
-    text-shadow: 2px 2px 4px #000;
+    text-shadow: 1px 1px 2px #000;
 }
 
 .informbox {
@@ -256,21 +277,19 @@ html {
     height: auto;
     background-color: #EEEEEE;
     padding: 30px 20px;
-    color:#666;
+    color: #666;
     font-size: 1em;
-
 }
 
 .insideblock {
     height: 100%;
     width: 100%;
-    padding:35px;
+    padding: 35px;
 }
 
-.insideblock:not(:first-child){
+.insideblock:not(:first-child) {
     padding: 40px;
 }
-
 
 .boxinside {
     background-color: #fff;
@@ -278,23 +297,32 @@ html {
     width: 100%;
     border: 1px solid #c7c7c7;
 }
-
 /* Hotfix #1 : improves media queries where div were stacked */
 
 @media screen and (min-width: 48em) {
     body,
     html {
         height: 100%;
-        overflow-y:hidden;
+        overflow-y: hidden;
     }
     .columns {
         height: 33.3333%;
     }
     .blocks {
         height: 100%;
-        opacity: 0.1;
+        opacity: 0.3;
     }
-    .informbox{
+    .informbox {
         height: 65%;
     }
+}
+
+.clickevent {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    z-index: 20;
+    opacity: 0;
 }
