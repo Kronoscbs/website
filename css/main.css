@@ -1,6 +1,6 @@
 /* 
 Author: KronosCbs
-Last Modified on: Jan 23, 2015
+Last Modified on: Feb 14, 2015
 */
 /* Common rules */
 
@@ -42,136 +42,72 @@ html {
 #decodeblock .clickevent {
     background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
     background-size: cover;
-    -moz-background-size: cover;
     transition: opacity 800ms ease-out;
     -webkit-transition: opacity 800ms ease-out;
     -moz-transition: opacity 800ms ease-out;
-}
-
-#decodeblock:hover,
-#decodeblock .clickevent:hover {
-    background: #0B0408 url('../img/dis1optim.jpg') center center no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
 }
 
 #designblock,
 #designblock .clickevent {
     background: #0B0408 url('../img/design1optim.jpg') center center no-repeat;
     background-size: cover;
-    -moz-background-size: cover;
     transition: opacity 800ms ease-out;
     -webkit-transition: opacity 800ms ease-out;
     -moz-transition: opacity 800ms ease-out;
-}
-
-#designblock:hover,
-#designblock .clickevent:hover {
-    background: #0B0408 url('../img/design1optim.jpg') center center no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
 }
 
 #fifablock,
 #fifablock .clickevent {
     background: #0B0408 url('../img/fifa1optim.jpg') center center no-repeat;
     background-size: cover;
-    -moz-background-size: cover;
     transition: opacity 800ms ease-out;
     -webkit-transition: opacity 800ms ease-out;
     -moz-transition: opacity 800ms ease-out;
-}
-
-#fifablock:hover,
-#fifablock .clickevent:hover {
-    background: #0B0408 url('../img/fifa1optim.jpg') center center no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
 }
 
 #cryptoblock,
 #cryptoblock .clickevent {
     background: #0B0408 url('../img/cryp1optim.jpg') center center no-repeat;
     background-size: cover;
-    -moz-background-size: cover;
     transition: opacity 800ms ease-out;
     -webkit-transition: opacity 800ms ease-out;
     -moz-transition: opacity 800ms ease-out;
-}
-
-#cryptoblock:hover,
-#cryptoblock .clickevent:hover {
-    background: #0B0408 url('../img/cryp1optim.jpg') center center no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
 }
 
 #crosswordblock,
 #crosswordblock .clickevent {
     background: #0B0408 url('../img/crosswords1optim.jpg') center center no-repeat;
     background-size: cover;
-    -moz-background-size: cover;
     transition: opacity 800ms ease-out;
     -webkit-transition: opacity 800ms ease-out;
     -moz-transition: opacity 800ms ease-out;
-}
-
-#crosswordblock:hover,
-#crosswordblock .clickevent:hover {
-    background: #0B0408 url('../img/crosswords1optim.jpg') center center no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
 }
 
 #sscbsblock,
 #sscbsblock .clickevent {
     background: #0B0408 url('../img/sscbs1optim.jpg') center center no-repeat;
     background-size: cover;
-    -moz-background-size: cover;
     transition: opacity 800ms ease-out;
     -webkit-transition: opacity 800ms ease-out;
     -moz-transition: opacity 800ms ease-out;
-}
-
-#sscbsblock:hover,
-#sscbsblock .clickevent:hover {
-    background: #0B0408 url('../img/sscbs1optim.jpg') center center no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
 }
 
 #sponsorblock,
 #sponsorblock .clickevent {
     background: #0B0408 url('../img/sponsors.jpg') center center no-repeat;
     background-size: cover;
-    -moz-background-size: cover;
     transition: opacity 800ms ease-out;
     -webkit-transition: opacity 800ms ease-out;
     -moz-transition: opacity 800ms ease-out;
-}
-
-#sponsorblock:hover,
-#sponsorblock .clickevent:hover {
-    background: #0B0408 url('../img/sponsors.jpg') center center no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
 }
 
 #eventblock,
 #eventblock .clickevent {
     background: #0B0408 url('../img/teamkronos1optim.jpg') center center no-repeat;
     background-size: cover;
-    -moz-background-size: cover;
     transition: opacity 800ms ease-out;
     -webkit-transition: opacity 800ms ease-out;
     -moz-transition: opacity 800ms ease-out;
-}
-
-#eventblock:hover,
-#eventblock .clickevent:hover {
-    background: #0B0408 url('../img/teamkronos1optim.jpg') center center no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
 }
 /* Stack rules */
 /* other elements */
@@ -195,7 +131,6 @@ html {
     text-shadow: 1px 1px 2px #000;
     box-shadow: 120px -1px 15px #2F2F2F inset;
 }
-
 
 .columns > div:target {
     height: 100%;
@@ -275,7 +210,6 @@ html {
 }
 
 .informbox {
-    background-color: #fff;
     height: auto;
     background-color: #EEEEEE;
     padding: 30px 20px;
@@ -318,7 +252,6 @@ html {
         height: 65%;
     }
 }
-
 /* Hotfix #2 : now blocks are clickable */
 
 .clickevent {
@@ -329,4 +262,27 @@ html {
     display: block;
     z-index: 20;
     opacity: 0;
+}
+
+#watermark {
+    position: fixed;
+    height: 56px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 40%;
+    right: 50%;
+    background-image: url(../img/sanganakflatwhitess.png);
+    width: 328px;
+    opacity: 0.8;
+}
+
+#countdown {
+    position: fixed;
+    top: 49%;
+    right: 30%;
+    font-size: 2.1em;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    opacity: 0.7;
 }
