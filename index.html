@@ -16,6 +16,10 @@
             opacity: 0;
             transition: opacity 500ms;
         }
+        
+        #loader {
+            opacity: 1;
+        }
     </style>
     <script type="text/javascript">
         window.onload = function (e) {
@@ -311,7 +315,10 @@
 
     <div id="watermark"></div>
     <div id="countdown"></div>
-    <div id="loader">Loading...</div>
+    <div id="loader">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
 
 </body>
 
