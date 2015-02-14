@@ -2,18 +2,51 @@
 <html lang="en">
 
 <head>
-    <title>Alpha-Sanganak 2015</title>
+    <title>Sanganak 2015</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/gene.css" type="text/css">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
     <script src="js/countdown.js"></script>
+    <style>
+        .columns,
+        #watermark,
+        #countdown {
+            opacity: 0;
+            transition: opacity 500ms;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function (e) {
+
+            document.getElementById("watermark").style.opacity = "1";
+            document.getElementById("countdown").style.opacity = "1";
+            var myElements = document.querySelectorAll(".columns");
+            for (var i = 0; i < myElements.length; i++) {
+                myElements[i].style.opacity = 1;
+            }
+
+        };
+    </script>
+
+    <noscript>
+        <style>
+            .columns,
+            #watermark,
+            #countdown {
+                opacity: 1;
+            }
+            
+            #loader {
+                display: none;
+            }
+        </style>
+
+    </noscript>
 </head>
 
 <body id="base">
-
-
 
     <div class="row columns">
 
@@ -278,6 +311,7 @@
 
     <div id="watermark"></div>
     <div id="countdown"></div>
+    <div id="loader">Loading...</div>
 
 </body>
 
