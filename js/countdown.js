@@ -42,9 +42,9 @@ function animateAllBlocks() {
     console.log(myElements);
     var randomnumber = getRandomInt(0, 7);
     console.log(randomnumber);
-    myElements[randomnumber].style.opacity = 1;
+    myElements[randomnumber].className += " classthatisbright";
     setTimeout(function () {
-        myElements[randomnumber].style.opacity = 0.3;
+        myElements[randomnumber].className = myElements[randomnumber].className.replace(/(?:^|\s)classthatisbright(?!\S)/g, '')
     }, 1200);
     setTimeout(animateAllBlocks, 2700);
 }

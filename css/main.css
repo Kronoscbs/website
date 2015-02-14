@@ -335,3 +335,7 @@ html {
         -webkit-transform: scale(1.0);
     }
 }
+
+.classthatisbright {
+    opacity: 1;
+}
