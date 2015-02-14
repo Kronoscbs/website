@@ -32,3 +32,19 @@ function CountDownTimer(dt, id) {
 }
 
 CountDownTimer('02/26/2015 10:1 AM', 'countdown');
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function animateAllBlocks() {
+    var myElements = document.querySelectorAll(".blocks");
+    console.log(myElements);
+    var randomnumber = getRandomInt(0, 7);
+    console.log(randomnumber);
+    myElements[randomnumber].style.opacity = 1;
+    setTimeout(function () {
+        myElements[randomnumber].style.opacity = 0.3;
+    }, 1200);
+    setTimeout(animateAllBlocks, 2700);
+}
